@@ -187,7 +187,7 @@ export const comments: Comment[] = [
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
-    authorName: 'Ahmed Morad',
+    authorName: 'Mona Ali',
     authorImage: '/images/comments/2.webp',
     date: 'Oct 15, 2021',
     content:

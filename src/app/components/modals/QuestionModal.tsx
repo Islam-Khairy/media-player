@@ -124,7 +124,7 @@ const QuestionModal = ({ open, handleModalClose }: QuestionModalProps) => {
               <button
                 type='submit'
                 disabled={!questionText.trim()}
-                className='flex-1 px-4 py-2 bg-[#006E61] text-white rounded-lg hover:bg-[#005a4f] disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors cursor-pointer'
+                className='flex-1 px-4 py-2 bg-[#006E61] text-white rounded-lg hover:bg-[#005a4f] disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors cursor-pointer truncate'
               >
                 Submit Question
               </button>

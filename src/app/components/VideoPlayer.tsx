@@ -39,7 +39,7 @@ const VideoPlayer = ({ video }: VideoPlayerProps) => {
             {materials.slice(0, 4).map((material: Material, index) => (
               <div
                 key={index}
-                className='flex items-center justify-between'
+                className='flex items-center justify-between border-b border-gray-300 py-1.5'
               >
                 <div className='flex items-center gap-2'>
                   <material.icon size={20} />
@@ -55,7 +55,7 @@ const VideoPlayer = ({ video }: VideoPlayerProps) => {
             {materials.slice(4, 8).map((material: any, index) => (
               <div
                 key={index}
-                className='flex items-center justify-between'
+                className='flex items-center justify-between border-b border-gray-300 py-1.5'
               >
                 <div className='flex items-center gap-2'>
                   <material.icon size={20} />
