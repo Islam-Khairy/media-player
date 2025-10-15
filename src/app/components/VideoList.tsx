@@ -21,11 +21,6 @@ const VideoList = ({ items, onVideoSelect }: VideoListProps) => {
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [timeLeft, setTimeLeft] = useState<number>(0);
 
-  const formatDuration = (duration: number): string => {
-    const minutes = Math.floor(duration / 60);
-    return `${minutes}min`;
-  };
-
   useEffect(() => {
     if (isQuizModalOpen && selectedVideo?.quizDuration) {
       setTimeLeft(selectedVideo.quizDuration);
@@ -155,7 +150,7 @@ const VideoList = ({ items, onVideoSelect }: VideoListProps) => {
                       <button
                         key={index}
                         onClick={() => handleAnswerSelect(index)}
-                        className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
+                        className={`w-full text-left p-4 rounded-lg border-2 transition-all cursor-pointer ${
                           selectedAnswers[currentQuestionIndex] === index
                             ? 'border-[#006E61] bg-[#006E61] text-white bg-opacity-10'
                             : 'border-gray-200 hover:border-gray-300'
@@ -197,7 +192,7 @@ const VideoList = ({ items, onVideoSelect }: VideoListProps) => {
               <button
                 onClick={handlePreviousQuestion}
                 disabled={currentQuestionIndex === 0}
-                className={`w-full px-4 py-2 border border-gray-300 rounded-lg transition-colors ${
+                className={`w-full px-4 py-2 border border-gray-300 rounded-lg transition-colors truncate ${
                   currentQuestionIndex === 0
                     ? 'text-gray-400 bg-gray-100 cursor-not-allowed'
                     : 'text-gray-700 hover:bg-gray-50'

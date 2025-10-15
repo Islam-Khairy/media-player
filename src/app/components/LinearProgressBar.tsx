@@ -8,7 +8,7 @@ const LinearProgressBar = ({ progress }: { progress: number }) => {
         variant='determinate'
         value={progress}
         sx={{
-          height: 8,
+          height: 6,
           borderRadius: 4,
           backgroundColor: '#e5e7eb',
           '& .MuiLinearProgress-bar': {

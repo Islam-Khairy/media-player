@@ -3,6 +3,10 @@ import { MdAccessTime } from 'react-icons/md';
 import { GrLanguage } from 'react-icons/gr';
 import { GiRead } from 'react-icons/gi';
 import { CiGrid42 } from 'react-icons/ci';
+import { AiOutlineUser } from "react-icons/ai";
+import { PiCertificate } from "react-icons/pi";
+import { LiaMoneyBillWaveSolid } from "react-icons/lia";
+import { IoExtensionPuzzleOutline } from "react-icons/io5";
 
 export const courseData: CourseData[] = [
   {
@@ -34,7 +38,7 @@ export const courseData: CourseData[] = [
           },
           {
             id: 2,
-            question: 'React is a JavaScript library for building user interfaces.',
+            question: 'Fayoum is an Egyptian city located in the Faiyum Oasis.',
             type: 'true-false',
             correctAnswer: 1,
           },
@@ -102,7 +106,7 @@ export const courseData: CourseData[] = [
           },
           {
             id: 2,
-            question: 'React is a JavaScript library for building user interfaces.',
+            question: 'Fayoum is an Egyptian city located in the Faiyum Oasis.',
             type: 'true-false',
             correctAnswer: 1,
           },
@@ -152,11 +156,31 @@ export const materials: Material[] = [
     label: 'Language',
     value: 'English',
   },
+   {
+    icon: AiOutlineUser,
+    label: 'Instructor',
+    value: 'Islam Khairy',
+  },
+   {
+    icon: PiCertificate,
+    label: 'Certificate',
+    value: 'Yes',
+  },
+   {
+    icon: LiaMoneyBillWaveSolid,
+    label: 'Price',
+    value: '$ 49.99',
+  },
+   {
+    icon: IoExtensionPuzzleOutline,
+    label: 'Quizzes',
+    value: 'Yes',
+  },
 ];
 
 export const comments: Comment[] = [
   {
-    authorName: 'Islam Khairy',
+    authorName: 'Ahmed Khairy',
     authorImage: '/images/comments/1.webp',
     date: 'Oct 10, 2021',
     content:

@@ -66,10 +66,6 @@ const FloatingLinks = () => {
     }
   }, []);
 
-  const handleModalClose = (val: boolean) => {
-    setIsQuestionModalOpen(val);
-  };
-
   return (
     <div>
       <motion.div
@@ -94,7 +90,7 @@ const FloatingLinks = () => {
 
       <QuestionModal
         open={isQuestionModalOpen}
-        handleModalClose={handleModalClose}
+        handleModalClose={() => setIsQuestionModalOpen(false)}
       />
     </div>
   );

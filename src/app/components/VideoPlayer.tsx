@@ -36,7 +36,7 @@ const VideoPlayer = ({ video }: VideoPlayerProps) => {
         <h2 className='text-3xl font-medium mb-6'>Course Materials</h2>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-white rounded-lg shadow-md'>
           <div className='flex flex-col gap-3 max-w-sm'>
-            {materials.map((material: Material, index) => (
+            {materials.slice(0, 4).map((material: Material, index) => (
               <div
                 key={index}
                 className='flex items-center justify-between'
@@ -52,7 +52,7 @@ const VideoPlayer = ({ video }: VideoPlayerProps) => {
             ))}
           </div>
           <div className='flex flex-col gap-3 max-w-sm'>
-            {materials.map((material: any, index) => (
+            {materials.slice(4, 8).map((material: any, index) => (
               <div
                 key={index}
                 className='flex items-center justify-between'
@@ -105,12 +105,15 @@ const VideoPlayer = ({ video }: VideoPlayerProps) => {
             onChange={(e) => setCommentText(e.target.value)}
             className='w-full h-56 mt-12 p-4 border border-[#CCCCCC] rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-300 resize-none placeholder:text-lg placeholder:text-gray-400'
           ></textarea>
-          <button type='button'
-          onClick={() => {
-            toast.success('Comment submitted successfully!');
-            setCommentText('');
-          }}
-          className='mt-6 px-8 py-3 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition text-lg flex items-center gap-2 cursor-pointer'>
+          <button
+          disabled={!commentText}
+            type='button'
+            onClick={() => {
+              toast.success('Comment added successfully!');
+              setCommentText('');
+            }}
+            className='mt-6 px-8 py-3 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition text-lg flex items-center gap-2 cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed'
+          >
             <span>Submit Review</span>
             <FaLongArrowAltRight size={18} />
           </button>
