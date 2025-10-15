@@ -10,7 +10,7 @@ interface LeaderboardModalProps {
 
 const leaderboardData = [
   { rank: 1, name: 'Islam Khairy', score: 95, progress: 'Top 1%' },
-  { rank: 2, name: 'Mona Ali', score: 92, progress: 'Top 2%' },
+  { rank: 2, name: 'Farida Ali', score: 92, progress: 'Top 2%' },
   { rank: 3, name: 'Mohamed Omar', score: 88, progress: 'Top 5%' },
 ];
 

@@ -3,10 +3,10 @@ import { MdAccessTime } from 'react-icons/md';
 import { GrLanguage } from 'react-icons/gr';
 import { GiRead } from 'react-icons/gi';
 import { CiGrid42 } from 'react-icons/ci';
-import { AiOutlineUser } from "react-icons/ai";
-import { PiCertificate } from "react-icons/pi";
-import { LiaMoneyBillWaveSolid } from "react-icons/lia";
-import { IoExtensionPuzzleOutline } from "react-icons/io5";
+import { AiOutlineUser } from 'react-icons/ai';
+import { PiCertificate } from 'react-icons/pi';
+import { LiaMoneyBillWaveSolid } from 'react-icons/lia';
+import { IoExtensionPuzzleOutline } from 'react-icons/io5';
 
 export const courseData: CourseData[] = [
   {
@@ -156,22 +156,22 @@ export const materials: Material[] = [
     label: 'Language',
     value: 'English',
   },
-   {
+  {
     icon: AiOutlineUser,
     label: 'Instructor',
     value: 'Islam Khairy',
   },
-   {
+  {
     icon: PiCertificate,
     label: 'Certificate',
     value: 'Yes',
   },
-   {
+  {
     icon: LiaMoneyBillWaveSolid,
     label: 'Price',
     value: '$ 49.99',
   },
-   {
+  {
     icon: IoExtensionPuzzleOutline,
     label: 'Quizzes',
     value: 'Yes',
@@ -187,7 +187,7 @@ export const comments: Comment[] = [
       'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
-    authorName: 'Mona Ali',
+    authorName: 'Farida Ali',
     authorImage: '/images/comments/2.webp',
     date: 'Oct 15, 2021',
     content:
