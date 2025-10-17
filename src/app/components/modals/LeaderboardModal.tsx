@@ -81,7 +81,7 @@ const LeaderboardModal = ({ open, onClose }: LeaderboardModalProps) => {
           </div>
 
           <div className='mt-6 text-center text-gray-600'>
-            <p>the better yet to come 🚀</p>
+            <p>the better is yet to come 🚀</p>
           </div>
         </div>
       </div>

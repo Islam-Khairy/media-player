@@ -43,7 +43,7 @@ export const courseData: CourseData[] = [
             correctAnswer: 1,
           },
           {
-            id: 1,
+            id: 3,
             question: 'What is the capital of Germany?',
             type: 'select-choice',
             options: ['London', 'Berlin', 'Paris', 'Madrid'],
@@ -99,19 +99,20 @@ export const courseData: CourseData[] = [
         questions: [
           {
             id: 1,
-            question: 'What is the capital of Spain?',
-            type: 'select-choice',
-            options: ['London', 'Berlin', 'Paris', 'Madrid'],
-            correctAnswer: 4,
-          },
-          {
-            id: 2,
             question: 'Fayoum is an Egyptian city located in the Faiyum Oasis.',
             type: 'true-false',
             correctAnswer: 1,
           },
           {
-            id: 1,
+            id: 2,
+            question: 'What is the capital of Spain?',
+            type: 'select-choice',
+            options: ['London', 'Berlin', 'Paris', 'Madrid'],
+            correctAnswer: 4,
+          },
+          
+          {
+            id: 3,
             question: 'What is the capital of Germany?',
             type: 'select-choice',
             options: ['London', 'Berlin', 'Paris', 'Madrid'],
